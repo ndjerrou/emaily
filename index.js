@@ -6,4 +6,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/nissim", (req, res) => {
+  res.send({
+    name: "Nissim"
+  });
+});
+
 app.listen(process.env.PORT || 5000);
